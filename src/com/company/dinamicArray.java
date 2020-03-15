@@ -96,12 +96,47 @@ public class dinamicArray<T> implements DAinterface<T>, Iterable<T>{
     }
 
     @Override
-    public boolean contains() {
+    public boolean contains(Object elem) {
+        /*
+        This method verify if an element is part of the array
+        this can also be: return indexOf(elem) != -1; which is much better...
+         */
+        if(size == 0) return false;
+        else if( size == 1 && array[0]!= elem) return false;
+        for(int i =0; i<size; i++){
+            if(array[i]== elem) return true;
+            continue;
+        }
         return false;
     }
 
     @Override
     public Iterator iterator() {
-        return null;
+        return new java.util.Iterator<T>(){
+            int index = 0;
+            @Override
+            public boolean hasNext() {
+                return index<size;
+            }
+
+            @Override
+            public T next() {
+                return array[index++];
+            }
+
+            @Override
+            public void remove() {
+                throw new UnsupportedOperationException("not yet implemented...");
+            }
+        };
+    }
+    public String toString(){
+        if(size == 0) return "[]";
+        StringBuilder str = new StringBuilder(size).append("[");
+        for(int i =0; i<size; i++){
+            str.append(array[i] + ", ");
+        }
+        str.append("]");
+     return str.toString();
     }
 }

@@ -12,7 +12,7 @@ public interface DAinterface<T> {
     public void removeAt(int index);
     public boolean remove(T elem);
     public int indexOf(T elem);
-    public boolean contains();
+    public boolean contains(T elem);
     public Iterator<T> iterator();
     public String toString();
 
