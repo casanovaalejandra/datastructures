@@ -1,0 +1,13 @@
+Data Structures can be seen as a house to HOLD data. It does not care whst data is holding.
+There are in/out rules on HOW the data ENTERS the house ( data structure).
+    - LIFO & FIFO
+We do have relations between the data inside the data structure
+    - parent node
+    - head of list
+STACKS
+- Pile of data
+- LIFO --> Last in first out
+- push in constant time
+- pop is constant time
+- search is linear time
+-We are going to create a generic stack, so it can hold any type of object
