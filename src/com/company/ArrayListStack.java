@@ -47,7 +47,7 @@ public class ArrayListStack<E> implements Stack<E> {
     @Override
     public E access(E item) {
         while(pointer>0){
-            E curr = stack.pop();
+            E curr = pop();
             if(curr.equals(item)) return curr;
 
         }
