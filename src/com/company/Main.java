@@ -8,8 +8,10 @@ public class Main {
 	// write your code here
         generalAlgorithms alg = new generalAlgorithms();
         int[] arr = {2,8,5,6,0,1};
-        List<Integer> sortedArr = alg.insertionSort(arr);
+        List<Integer> sortedArr = alg.insertionSortIncreasing(arr);
         System.out.println(sortedArr);
+        List<Integer> sortedArrayDecreasing = alg.insertionSortDecreasing(arr);
+        System.out.println(sortedArrayDecreasing);
     }
 
 }
