@@ -2,12 +2,12 @@ package com.company;
 
 public interface MinHeap<Integer> {
 
-    TreeNode min(TreeNode root);
+    TreeNode min();
 
-    void add(TreeNode node);
+    void add(TreeNode node, TreeNode root);
 
     TreeNode swapFromTop(TreeNode root);
 
-    TreeNode swapFromBotton(TreeNode leaf);
+    TreeNode getRoot();
 
 }
