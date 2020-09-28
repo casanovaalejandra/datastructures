@@ -1,14 +1,37 @@
 package com.company;
 
-public abstract class TreeNode<E>  implements TreeNodeInterface<E> {
-    private E data;
-    private TreeNode<E> node;
-    @Override
-    public E get() {
-        return data;
-    }
-    @Override
-    public void set(E data) {
+public class TreeNode<Integer>  implements TreeNodeInterface<Integer> {
+    private Integer data;
+    private TreeNode<Integer> node;
+    private TreeNode<Integer> left;
+    private TreeNode<Integer> right;
+
+    public TreeNode(Integer data){
         this.data = data;
     }
+
+    public Integer get() {
+        return data;
+    }
+
+    public void set(Integer data) {
+        this.data = data;
+    }
+
+    public void setLeft(TreeNode left){
+        this.left = left;
+    }
+
+    public void setRight(TreeNode right){
+        this.right = right;
+    }
+
+    public TreeNode getRight(){
+        return this.right;
+    }
+
+    public  TreeNode getLeft(){
+        return this.left;
+    }
+
 }
