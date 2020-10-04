@@ -6,6 +6,15 @@ public class TreeNode<Integer>  implements TreeNodeInterface<Integer> {
     private TreeNode<Integer> left;
     private TreeNode<Integer> right;
 
+    public TreeNode<Integer> getParent() {
+        return parent;
+    }
+
+    public void setParent(TreeNode<Integer> parent) {
+        this.parent = parent;
+    }
+
+    private TreeNode<Integer> parent;
     public TreeNode(Integer data){
         this.data = data;
     }

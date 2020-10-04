@@ -65,7 +65,18 @@ public class MinHeapImpl implements MinHeap<Integer>{
         }
         return root;
     }
+    public TreeNode swapFromBotton(TreeNode node){
+        if(node.getParent() == null) return node;
+        if((Integer)node.get() < (Integer)node.getParent().get()){
+
+        }
+
+        return null;
+    }
+
     public TreeNode getRoot(){
         return this.root;
     }
+
+
 }
