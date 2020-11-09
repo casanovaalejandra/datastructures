@@ -12,6 +12,11 @@ public class Main {
         System.out.println(sortedArr);
         List<Integer> sortedArrayDecreasing = alg.insertionSortDecreasing(arr);
         System.out.println(sortedArrayDecreasing);
+
+        //candy crush algorithm debugging
+        int[][] board = {{0,1,0},{0,1,2},{2,1,3}};
+        int[][] result = alg.candyCrush(board);
+        System.out.println("result: "+result.toString());
     }
 
 }
